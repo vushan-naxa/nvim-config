@@ -65,7 +65,7 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+		theme = "wombat",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
@@ -74,7 +74,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { branch, diagnostics },
 		lualine_b = { mode },
-		lualine_c = {},
+		lualine_c = {{'filename', file_status = true, path = 2, shorting_target = 40, symbols = {modified = '[+]', readonly = '[-]', unnamed = '[No Name]',}}},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },

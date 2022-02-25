@@ -61,7 +61,10 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  use 'tribela/vim-transparent'
+  use 'wfxr/minimap.vim'
+  use 'michalbachowski/vim-wombat256mod'
+  
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -98,5 +101,6 @@ return packer.startup(function(use)
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
-  end
+  end             
 end)
+
