@@ -19,3 +19,20 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+-- vim.cmd([[
+-- au FocusLost * :wa
+-- set autowriteall
+-- ]])
+vim.g['auto_save'] = 1
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-a>',
+  'ggVG',
+  { noremap = true }
+)
+-- vim.api.nvim_set_keymap(
+--   'n',
+--   '<ESC><ESC><ESC>',
+--   '<ESC>:w<CR>',
+--   { noremap = true }
+-- )
