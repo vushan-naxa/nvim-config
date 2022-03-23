@@ -30,11 +30,18 @@ vim.api.nvim_set_keymap(
   'ggVG',
   { noremap = true }
 )
--- vim.api.nvim_set_keymap(
---   'n',
---   '<ESC><ESC><ESC>',
---   '<ESC>:w<CR>',
---   { noremap = true }
--- )
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-S-Left>',
+  ':bprev <CR>',
+  { noremap = true }
+)
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-S-Right>',
+  ':bnext <CR>',
+  { noremap = true }
+)
+
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
