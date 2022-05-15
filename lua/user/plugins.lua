@@ -60,11 +60,11 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use 'tribela/vim-transparent'
   use 'wfxr/minimap.vim'
   use 'michalbachowski/vim-wombat256mod'
-  
+
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
