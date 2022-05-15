@@ -23,7 +23,7 @@ require "user.autocommands"
 -- au FocusLost * :wa
 -- set autowriteall
 -- ]])
-vim.g['auto_save'] = 1
+vim.g['auto_save'] = 0
 local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }

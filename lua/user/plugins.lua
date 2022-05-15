@@ -60,11 +60,10 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use 'tribela/vim-transparent'
   use 'wfxr/minimap.vim'
   use 'michalbachowski/vim-wombat256mod'
-  
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -97,14 +96,27 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"
 
   -- Autosave
   use "907th/vim-auto-save"
+
+  -- Tagbar
+  use "preservim/tagbar"
+
+  -- Lualine Themes
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Dev Icons
+  use "ryanoasis/vim-devicons"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
-  end             
+  end
 end)
 
