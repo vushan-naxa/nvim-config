@@ -65,7 +65,6 @@ return packer.startup(function(use)
   use 'wfxr/minimap.vim'
   use 'michalbachowski/vim-wombat256mod'
 
-
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -97,6 +96,7 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"
 
   -- Autosave
   use "907th/vim-auto-save"
