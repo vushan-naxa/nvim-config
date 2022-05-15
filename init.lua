@@ -19,10 +19,7 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
--- vim.cmd([[
--- au FocusLost * :wa
--- set autowriteall
--- ]])
+
 vim.g['auto_save'] = 0
 local opts = { noremap = true, silent = true }
 
