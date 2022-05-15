@@ -101,10 +101,22 @@ return packer.startup(function(use)
   -- Autosave
   use "907th/vim-auto-save"
 
+  -- Tagbar
+  use "preservim/tagbar"
+
+  -- Lualine Themes
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Dev Icons
+  use "ryanoasis/vim-devicons"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
-  end             
+  end
 end)
 
