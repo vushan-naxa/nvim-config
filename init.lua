@@ -47,4 +47,3 @@ set.number=true
 set.relativenumber=true
 
 
-assertsd asdf asd
