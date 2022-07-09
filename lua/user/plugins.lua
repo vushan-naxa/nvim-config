@@ -64,6 +64,8 @@ return packer.startup(function(use)
   use 'tribela/vim-transparent'
   use 'wfxr/minimap.vim'
   use 'michalbachowski/vim-wombat256mod'
+  use 'tomasiser/vim-code-dark'
+  use 'NLKNguyen/papercolor-theme'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
