@@ -107,7 +107,7 @@ ins_left {
     end
     return msg
   end,
-  icon = ' LSP:',
+  icon = '  ',
   color = { fg = '#ffffff', gui = 'bold' },
 }
 

@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme wombat256mod
+  colorscheme codedark
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
